@@ -79,12 +79,20 @@ document.getElementById('save-btn').addEventListener('click',function(){
  const incomeAmount = getInputValue('income-input');
  const savePercentage =  getInputValue("savePercentage-input");
   const savingAmount =incomeAmount*(savePercentage/100);
-  if(savePercentage<0 || isNaN(incomeAmount) ){
+
+  if(savePercentage<0 || isNaN(incomeAmount ) ){
     document.getElementById("save-error-message").style.display="block"
     document.getElementById("saving-amount").innerText='00';
     document.getElementById("remaining-amount").innerText="00";
-  } else {
-    document.getElementById("saving-amount").innerText=' ';
+  } 
+  else if(savePercentage>100){
+    document.getElementById("save-error-message").style.display="none"
+    document.getElementById("save-error-message2").style.display="block"
+  }
+  
+  else {
+    document.getElementById("save-error-message").style.display="none"
+    document.getElementById("save-error-message2").style.display="none"
     document.getElementById("saving-amount").innerText=savingAmount;
     
    const afterCostBalanceText =showAmount("afterCost-balance").innerText;
@@ -92,8 +100,7 @@ document.getElementById('save-btn').addEventListener('click',function(){
     const afterCostBalance =parseFloat(afterCostBalanceText)
     
     const remainingAmount = afterCostBalance- savingAmount;
-    document.getElementById("remaining-amount").innerText=" ";
-  document.getElementById("remaining-amount").innerText=remainingAmount;
+      document.getElementById("remaining-amount").innerText=remainingAmount;
  
 
   
