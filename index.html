@@ -32,11 +32,16 @@
                             <h5>Food     : <input id="foodCost-input" class=" ms-5  border border-secondary border-2 rounded px-4 py-1" type="text" name="" id=""> </h5>
                             <h5>Rent    : <input id="rentCost-input" class="  rent  border border-secondary border-2 rounded px-4 py-1" type="text" name="" id=""></h5>
                             <h5>Clothes : <input id="clothesCost-input" class=" ms-4 border border-secondary border-2 rounded px-4 py-1" type="text" name="" id=""></h5>
+                            <p id="error-message" class="text-danger fw-bolder fs-5 ">Error.Please,Provide positve number</p>
+                            <p id="error-message2" class="text-danger fw-bolder fs-5 ">Error.Input can not be empty</p>
+                            <p id="error-message3" class="text-danger fw-bolder fs-5 ">You can't  spend more than your income</p>
                             <button id="calculate-btn" class="btn bg-primary  border border-3 py-1 px-4 rounded-3 text-white fw-bold fs-5" type="submit">Calculate</button>
         
                                 <h4 >Total Expenses: <span id="total-expenses">00</span> </h4>
                                  <h4>Balance : <span id="afterCost-balance"> 00</span> </h>
                                  <p class="fw-bolder">Save : <input id="savePercentage-input" class="border w-25 border-secondary border-3 rounded px-4 py-1" type="text" name="" id=""> % <button id="save-btn" class=" bg-info  border border-3 py-1 px-5 rounded-3 text-white fw-bold fs-5" type="submit">Save</button></p>
+
+                                 <p id="save-error-message" class="text-danger fw-bolder fs-5 ">Error.Please,Provide positve number</p>
                                  <h3>Saving Amount : <span id="saving-amount">00</span> </h3>
                                  <h3>Remaining Amount : <span id="remaining-amount">00</span> </h3>
         

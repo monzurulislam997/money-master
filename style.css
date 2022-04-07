@@ -8,3 +8,16 @@ input {
 .btn{
     margin-left: 200px;
 }
+
+#error-message{
+    display: none;
+}
+#error-message2{
+    display: none;
+}
+#error-message3{
+    display: none;
+}
+#save-error-message{
+    display: none;
+}
