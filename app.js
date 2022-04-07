@@ -78,19 +78,23 @@ document.getElementById('save-btn').addEventListener('click',function(){
  //save update
  const incomeAmount = getInputValue('income-input');
  const savePercentage =  getInputValue("savePercentage-input");
- 
-  if(savePercentage<0){
+  const savingAmount =incomeAmount*(savePercentage/100);
+  if(savePercentage<0 || isNaN(incomeAmount) ){
     document.getElementById("save-error-message").style.display="block"
+    document.getElementById("saving-amount").innerText='00';
+    document.getElementById("remaining-amount").innerText="00";
   } else {
-    const savingAmount =incomeAmount*(savePercentage/100);
+    document.getElementById("saving-amount").innerText=' ';
     document.getElementById("saving-amount").innerText=savingAmount;
+    
    const afterCostBalanceText =showAmount("afterCost-balance").innerText;
   
     const afterCostBalance =parseFloat(afterCostBalanceText)
     
     const remainingAmount = afterCostBalance- savingAmount;
-  
+    document.getElementById("remaining-amount").innerText=" ";
   document.getElementById("remaining-amount").innerText=remainingAmount;
+ 
 
   
 
