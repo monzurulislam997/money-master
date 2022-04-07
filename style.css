@@ -1,9 +1,6 @@
 input {
     background-color: #e3dac9 ;
 } 
-.rent {
-    margin-left: 52px;
-}
 
 .btn{
     margin-left: 200px;
@@ -24,3 +21,29 @@ input {
 #save-error-message2{
     display: none;
 }
+
+    /* responsive media query */
+
+@media only screen and (max-width: 600px)  {
+   #rentCost-input{
+       margin-left: 20px;
+   }
+   #foodCost-input{
+       margin-left: 18px;
+   }
+   #income-input{
+       margin-left: 5px;
+   }
+  }
+
+  @media only screen and (min-width: 992px) {
+    #rentCost-input{
+        margin-left: 20px;
+    }
+    #foodCost-input{
+        margin-left: 18px;
+    }
+    #income-input{
+        margin-left: 5px;
+    }
+  } 
