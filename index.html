@@ -17,27 +17,28 @@
                 <div class="container">
 
                    <div class="row">
-                    <div class="col-lg-6 ">
-                        <div class="  cover-img">
+                       <!-- img area -->
+                    <div class="col-lg-6  ">
+                        <div class=" me-2 cover-img">
                             <img  class="img-fluid"  src="images/cover.jpg" alt="">
                         </div>
                     </div>
-                   
-                    <div class="col-lg-6">
+                        <!-- calculation area -->
+                    <div class="img-fluid col-12 col-md-12 col-lg-6">
                         <div class="   calculation-area">
-                            <h2 class="text-center">Income</h2>
-                            <h4  >Income : <input class=" ms-4 border  border-secondary border-2 rounded  px-4 py-1" type="text" name="" id=""></h4>
-                            <h3 class="text-center my-3 ">Expenses</h3>
-                            <h4>Food     : <input class=" ms-5  border border-secondary border-2 rounded px-4 py-1" type="text" name="" id=""> </h4>
-                            <h4>Rent    : <input class="  rent  border border-secondary border-2 rounded px-4 py-1" type="text" name="" id=""></h4>
-                            <h4>Clothes : <input class=" ms-4 border border-secondary border-2 rounded px-4 py-1" type="text" name="" id=""></h4>
-                            <button class="btn bg-info  border border-3 py-2 px-5 rounded-3 text-white fw-bold fs-4" type="submit">Calculate</button>
+                            <h3 class="text-center">Income</h3>
+                            <h5  >Income : <input  id="income-input" class="  ms-4 border  border-secondary border-2 rounded px-4   py-1" type="text" name="" id=""></h5>
+                            <h4 class="text-center my-3 ">Expenses</h4>
+                            <h5>Food     : <input id="foodCost-input" class=" ms-5  border border-secondary border-2 rounded px-4 py-1" type="text" name="" id=""> </h5>
+                            <h5>Rent    : <input id="rentCost-input" class="  rent  border border-secondary border-2 rounded px-4 py-1" type="text" name="" id=""></h5>
+                            <h5>Clothes : <input id="clothesCost-input" class=" ms-4 border border-secondary border-2 rounded px-4 py-1" type="text" name="" id=""></h5>
+                            <button id="calculate-btn" class="btn bg-primary  border border-3 py-1 px-4 rounded-3 text-white fw-bold fs-5" type="submit">Calculate</button>
         
-                                <h3>Total Expenses</h3>
-                                 <h3>Balance :</h3>
-                                 <p class="fw-bolder">Save : <input class="border w-25 border-secondary border-3 rounded px-4 py-1" type="text" name="" id=""> % <button class=" bg-info  border border-3 py-2 px-5 rounded-3 text-white fw-bold fs-4" type="submit">Save</button></p>
-                                 <h3>Saving Amount : </h3>
-                                 <h3>Remaining Amount : </h3>
+                                <h4 >Total Expenses: <span id="total-expenses">00</span> </h4>
+                                 <h4>Balance : <span id="afterCost-balance"> 00</span> </h>
+                                 <p class="fw-bolder">Save : <input id="savePercentage-input" class="border w-25 border-secondary border-3 rounded px-4 py-1" type="text" name="" id=""> % <button id="save-btn" class=" bg-info  border border-3 py-1 px-5 rounded-3 text-white fw-bold fs-5" type="submit">Save</button></p>
+                                 <h3>Saving Amount : <span id="saving-amount">00</span> </h3>
+                                 <h3>Remaining Amount : <span id="remaining-amount">00</span> </h3>
         
         
                         
